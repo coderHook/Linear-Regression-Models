@@ -49,3 +49,16 @@ bptest(stock_return_scaled ~ earnings_ranking + debt_to_equity)
 #Clear workspace
 rm(list=ls())
 
+# Set working directory to where csv file is located
+setwd("set directory")
+
+# Read the data
+mydata<- read.csv("set file path")
+attach(mydata)
+
+# Logistic regression
+dividend <- glm(dividend ~ years + earnings_estimates, data=mydata, family="binomial")
+summary(dividend)
+
+yearsprobability=dividend$coefficients[2]
+exp(yearsprobability)
