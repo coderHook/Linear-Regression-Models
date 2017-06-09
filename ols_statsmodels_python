@@ -1,4 +1,4 @@
-#http://www.michaeljgrogan.com/statsmodels-regress-using-multiple-independent-variables/
+#Reference: http://www.michaeljgrogan.com/statsmodels-regress-using-multiple-independent-variables/
 
 import numpy as np
 import statsmodels.api as sm
