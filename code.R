@@ -45,3 +45,7 @@ reg3 <- lm(stock_return_scaled ~ earnings_ranking + debt_to_equity)
 summary(reg3)
 
 bptest(stock_return_scaled ~ earnings_ranking + debt_to_equity)
+
+#Clear workspace
+rm(list=ls())
+
